@@ -1,102 +1,120 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-
+ 
+/// <summary>
+/// Central game controller (Singleton). Manages the countdown timer,
+/// triggers random Thwomp attacks on an interval, tracks player deaths,
+/// and ends or restarts the game when the win/lose conditions are met.
+/// </summary>
 public class GameManager : MonoBehaviour
 {
-    
-    public static GameManager instancia;
-
-    [Header("Configuración del Tiempo")]
-    public float tiempoJuego = 60f;
-    private bool juegoTerminado = false;
-
-    [Header("Configuración de Thwomps")]
-    public List<TrampaThwomp> enemigos; 
-    public float intervaloAtaque = 2f;
-
-    [Header("Configuración de Jugadores")]
-    public List<MuerteJugador> jugadores; 
-
-    void Awake()
+    // Singleton reference — other scripts access the manager through this
+    public static GameManager instance;
+ 
+    [Header("Timer Settings")]
+    public float gameTime = 60f;        // Seconds players must survive to win
+ 
+    [Header("Thwomp Settings")]
+    public List<ThwompTrap> enemies;    // All ThwompTrap objects in the scene
+    public float attackInterval = 2f;  // Seconds between random Thwomp attacks
+ 
+    [Header("Player Settings")]
+    public List<PlayerDeath> players;  // All PlayerDeath components in the scene
+ 
+    private bool gameOver = false;
+ 
+    // ── Unity lifecycle ───────────────────────────────────────────────────────
+ 
+    private void Awake()
     {
-        
-        if (instancia == null)
+        // Enforce a single GameManager instance; destroy duplicates
+        if (instance == null)
         {
-            instancia = this;
+            instance = this;
         }
         else
         {
             Destroy(gameObject);
         }
     }
-
-    void Start()
+ 
+    private void Start()
     {
-        
-        InvokeRepeating("LanzarAtaqueAleatorio", 1f, intervaloAtaque);
+        // Begin triggering random Thwomp attacks after a 1-second delay
+        InvokeRepeating(nameof(TriggerRandomAttack), 1f, attackInterval);
     }
-
-    void Update()
+ 
+    private void Update()
     {
-        if (juegoTerminado) return;
-
-        
-        if (tiempoJuego > 0)
+        if (gameOver) return;
+ 
+        if (gameTime > 0f)
         {
-            tiempoJuego -= Time.deltaTime;
+            // Count down the survival timer each frame
+            gameTime -= Time.deltaTime;
         }
         else
         {
-            FinalizarJuego("¡Tiempo terminado! ¡Sobreviviste!");
+            // Timer reached zero — players survived long enough to win
+            EndGame("Time's up! You survived!");
         }
     }
-
-    void LanzarAtaqueAleatorio()
+ 
+    // ── Game logic ────────────────────────────────────────────────────────────
+ 
+    /// <summary>
+    /// Picks a random Thwomp from the list and triggers its attack,
+    /// provided the game has not already ended.
+    /// </summary>
+    private void TriggerRandomAttack()
     {
-        if (juegoTerminado || enemigos.Count == 0) return;
-
-        
-        int indice = Random.Range(0, enemigos.Count);
-        
-        if (enemigos[indice] != null)
-        {
-            enemigos[indice].ActivarAtaque();
-        }
+        if (gameOver || enemies.Count == 0) return;
+ 
+        int index = Random.Range(0, enemies.Count);
+ 
+        if (enemies[index] != null)
+            enemies[index].TriggerAttack();
     }
-
-    
-    public void RegistrarMuerte()
+ 
+    /// <summary>
+    /// Called by PlayerDeath whenever a player dies.
+    /// Counts remaining survivors and ends the game if none are left.
+    /// </summary>
+    public void RegisterDeath()
     {
-        int sobrevivientes = 0;
-
-        foreach (MuerteJugador jugador in jugadores)
+        int survivors = 0;
+ 
+        foreach (PlayerDeath player in players)
         {
-            if (jugador != null && !jugador.EstaMuerto())
-            {
-                sobrevivientes++;
-            }
+            if (player != null && !player.IsDead())
+                survivors++;
         }
-
-        Debug.Log("Jugadores restantes: " + sobrevivientes);
-
-        if (sobrevivientes <= 0)
-        {
-            FinalizarJuego("¡Todos han muerto! GAME OVER");
-        }
+ 
+        Debug.Log("Remaining players: " + survivors);
+ 
+        if (survivors <= 0)
+            EndGame("All players have died! GAME OVER");
     }
-
-    void FinalizarJuego(string mensaje)
+ 
+    /// <summary>
+    /// Stops all attacks, logs the outcome, and schedules a scene reload.
+    /// </summary>
+    /// <param name="message">Message describing the end-game condition.</param>
+    private void EndGame(string message)
     {
-        juegoTerminado = true;
-        CancelInvoke("LanzarAtaqueAleatorio");
-        Debug.Log(mensaje);
-
-        
-        Invoke("ReiniciarEscena", 3f);
+        gameOver = true;
+        CancelInvoke(nameof(TriggerRandomAttack));
+        Debug.Log(message);
+ 
+        // Wait 3 seconds before reloading so players can read the result
+        Invoke(nameof(ReloadScene), 3f);
     }
-
-    void ReiniciarEscena()
+ 
+    /// <summary>
+    /// Reloads the active scene to restart the game.
+    /// </summary>
+    private void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
