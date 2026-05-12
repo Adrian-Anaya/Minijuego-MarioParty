@@ -19766,9 +19766,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fa94bc4d932cd46aade921ea627774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoReloj: {fileID: 0}
-  objetoADesaparecer: {fileID: 0}
-  tiempoRestante: 30
+  countdownText: {fileID: 1481268406}
+  startLabel: {fileID: 564512309}
+  remainingTime: 30
 --- !u!4 &2063930195
 Transform:
   m_ObjectHideFlags: 0

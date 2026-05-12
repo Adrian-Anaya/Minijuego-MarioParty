@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!21 &-2500943445403828610
+--- !u!21 &-2418699903763527355
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 1166873686756594980}
+        m_Texture: {fileID: 5088927856915821048}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -70,7 +70,7 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0.21
+    - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9
@@ -102,7 +102,7 @@ Material:
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 0.25882354, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
@@ -144,7 +144,7 @@ MonoBehaviour:
     m_StrikethroughOffset: 27.2
     m_StrikethroughThickness: 4.5
     m_TabWidth: 45
-  m_Material: {fileID: -2500943445403828610}
+  m_Material: {fileID: -2418699903763527355}
   m_SourceFontFileGUID: 110525902aa7f684daa414e186125177
   m_CreationSettings:
     sourceFontFileName: 
@@ -932,7 +932,7 @@ MonoBehaviour:
     m_GlyphIndex: 11
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: 1166873686756594980}
+  - {fileID: 5088927856915821048}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_GetFontFeatures: 1
@@ -1308,7 +1308,7 @@ MonoBehaviour:
     kerningPairs: []
   fallbackFontAssets: []
   atlas: {fileID: 0}
---- !u!28 &1166873686756594980
+--- !u!28 &5088927856915821048
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
