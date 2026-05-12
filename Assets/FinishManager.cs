@@ -1,46 +1,92 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class FinishManager : MonoBehaviour
 {
     public GameObject finishText;
     public AudioSource finishSound;
+    public GameObject finalMenu;
+    public float timeToFinish = 30f; // Tiempo inicial
 
-    float time = 30f;
-    bool finished = false;
+    private bool finished = false;
+
+    void Start()
+    {
+        // Al empezar, nos aseguramos de que el menú esté oculto
+        if (finalMenu != null) finalMenu.SetActive(false);
+        if (finishText != null) finishText.SetActive(false);
+        
+        // Resetear el tiempo de escala por si acaso
+        Time.timeScale = 1f;
+    }
 
     void Update()
     {
-        time -= Time.deltaTime;
+        if (!finished)
+        {
+            // El tiempo baja cada segundo
+            timeToFinish -= Time.deltaTime;
 
-        if (time <= 0 && !finished)
+            // Si quieres ver el tiempo en la consola, quita las barras de la línea de abajo:
+            // Debug.Log("Tiempo restante: " + timeToFinish);
+
+            if (timeToFinish <= 0)
+            {
+                TerminarPorVictoria();
+            }
+        }
+    }
+
+    // Se llama cuando el tiempo llega a 0
+    public void TerminarPorVictoria()
+    {
+        if (finished) return;
+        finished = true;
+
+        if (finishText != null) 
         {
             finishText.SetActive(true);
-            finishSound.Play();
-
-            StartCoroutine(BounceEffect());
-
-            finished = true;
+            var tmp = finishText.GetComponent<TextMeshProUGUI>();
+            if (tmp != null) tmp.text = "¡FINISH!"; // Texto de victoria
         }
+
+        MostrarMenuFinal();
     }
 
-    System.Collections.IEnumerator BounceEffect()
+    // Se llama desde el script MuerteJugador
+    public void JugadorMurio()
     {
-        Transform t = finishText.transform;
+        if (finished) return;
+        finished = true;
 
-        t.localScale = Vector3.zero;
-
-        while (t.localScale.x < 1.2f)
+        if (finishText != null) 
         {
-            t.localScale += Vector3.one * Time.deltaTime * 3;
-            yield return null;
+            finishText.SetActive(true);
+            var tmp = finishText.GetComponent<TextMeshProUGUI>();
+            if (tmp != null) tmp.text = "¡GAME OVER!"; // Texto de derrota
         }
 
-        while (t.localScale.x > 1f)
-        {
-            t.localScale -= Vector3.one * Time.deltaTime * 3;
-            yield return null;
-        }
-
-        t.localScale = Vector3.one;
+        MostrarMenuFinal();
     }
-}                                                                                                                                                                 
+
+    private void MostrarMenuFinal()
+    {
+        if (finishSound != null) finishSound.Play();
+        if (finalMenu != null) finalMenu.SetActive(true);
+
+        Time.timeScale = 0f; // Pausa el juego
+    }
+
+    public void Reiniciar()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
+        Debug.Log("Saliendo del juego...");
+    }
+}                                                                                                             
