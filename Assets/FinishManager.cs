@@ -1,46 +1,69 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class FinishManager : MonoBehaviour
 {
     public GameObject finishText;
     public AudioSource finishSound;
+    public GameObject finalMenu;
+    public float timeToFinish = 30f;
 
-    float time = 30f;
-    bool finished = false;
+    private bool finished = false;
+
+    void Start()
+    {
+        if (finalMenu != null) finalMenu.SetActive(false);
+        if (finishText != null) finishText.SetActive(false);
+    }
 
     void Update()
     {
-        time -= Time.deltaTime;
-
-        if (time <= 0 && !finished)
+        if (!finished)
         {
-            finishText.SetActive(true);
-            finishSound.Play();
-
-            StartCoroutine(BounceEffect());
-
-            finished = true;
+            timeToFinish -= Time.deltaTime;
+            if (timeToFinish <= 0)
+            {
+                TerminarJuego();
+            }
         }
     }
 
-    System.Collections.IEnumerator BounceEffect()
+    public void TerminarJuego()
     {
-        Transform t = finishText.transform;
+        if (finished) return;
+        finished = true;
 
-        t.localScale = Vector3.zero;
+        if (finishText != null) finishText.SetActive(true);
+        if (finishSound != null) finishSound.Play();
+        if (finalMenu != null) finalMenu.SetActive(true);
 
-        while (t.localScale.x < 1.2f)
-        {
-            t.localScale += Vector3.one * Time.deltaTime * 3;
-            yield return null;
-        }
-
-        while (t.localScale.x > 1f)
-        {
-            t.localScale -= Vector3.one * Time.deltaTime * 3;
-            yield return null;
-        }
-
-        t.localScale = Vector3.one;
+        Time.timeScale = 0f; // Pausa el juego
     }
-}                                                                                                                                                                 
+
+    // ESTA ES LA FUNCIÓN QUE FALTABA Y CAUSABA EL ERROR ROJO
+    public void JugadorMurio()
+    {
+        if (!finished)
+        {
+            if (finishText != null) 
+            {
+                var tmp = finishText.GetComponent<TextMeshProUGUI>();
+                if (tmp != null) tmp.text = "¡GAME OVER!";
+            }
+            TerminarJuego();
+        }
+    }
+
+    public void Reiniciar()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
+        Debug.Log("Saliendo del juego...");
+    }
+}                                                                                                               
