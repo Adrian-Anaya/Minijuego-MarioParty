@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 91f362acd56f2a94ab76dfdc3761b286
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3388718691045216406
+    second: tiled_Abstract brown background tiles_0
+  - first:
+      213: -6683449597175609233
+    second: tiled_Abstract brown background tiles_1
+  - first:
+      213: -1451960136036389014
+    second: tiled_Abstract brown background tiles_2
+  - first:
+      213: 6412222030769749792
+    second: tiled_Abstract brown background tiles_3
+  - first:
+      213: -1210443020114328472
+    second: tiled_Abstract brown background tiles_4
+  - first:
+      213: -5095429742957378599
+    second: tiled_Abstract brown background tiles_5
+  - first:
+      213: 6802076402145579470
+    second: tiled_Abstract brown background tiles_6
+  - first:
+      213: -2150790299242060491
+    second: tiled_Abstract brown background tiles_7
+  - first:
+      213: 8316914066188904345
+    second: tiled_Abstract brown background tiles_8
+  - first:
+      213: 3688088137690776885
+    second: tiled_Abstract brown background tiles_9
+  - first:
+      213: -3068880545720371152
+    second: tiled_Abstract brown background tiles_10
+  - first:
+      213: -738684500051610351
+    second: tiled_Abstract brown background tiles_11
+  - first:
+      213: 2886855793784256967
+    second: tiled_Abstract brown background tiles_12
+  - first:
+      213: 5199526000682363822
+    second: tiled_Abstract brown background tiles_13
+  - first:
+      213: -3905395826405152827
+    second: tiled_Abstract brown background tiles_14
+  - first:
+      213: 5268617339036145877
+    second: tiled_Abstract brown background tiles_15
+  - first:
+      213: 6986070446104428406
+    second: tiled_Abstract brown background tiles_16
+  - first:
+      213: -4586848642828216741
+    second: tiled_Abstract brown background tiles_17
+  - first:
+      213: 8639680514453461069
+    second: tiled_Abstract brown background tiles_18
+  - first:
+      213: 807888665659344255
+    second: tiled_Abstract brown background tiles_19
+  - first:
+      213: -6617759030053308780
+    second: tiled_Abstract brown background tiles_20
+  - first:
+      213: 8950206411836774889
+    second: tiled_Abstract brown background tiles_21
+  - first:
+      213: -4497061215333560920
+    second: tiled_Abstract brown background tiles_22
+  - first:
+      213: 414520731097976112
+    second: tiled_Abstract brown background tiles_23
+  - first:
+      213: 4364925974670642718
+    second: tiled_Abstract brown background tiles_24
+  - first:
+      213: -7856474748840042652
+    second: tiled_Abstract brown background tiles_25
+  - first:
+      213: 7946242884109199819
+    second: tiled_Abstract brown background tiles_26
+  - first:
+      213: 2562650702479123636
+    second: tiled_Abstract brown background tiles_27
+  - first:
+      213: 8702540263563162835
+    second: tiled_Abstract brown background tiles_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fe5800e4ad8f0d0800000000000000
+      internalID: -3388718691045216406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_1
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 290
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68ce16700e9f33a0800000000000000
+      internalID: -6683449597175609233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_2
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 386
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fe587f2f999dbe0800000000000000
+      internalID: -1451960136036389014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_3
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 357
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ff6fca6f9ccf850800000000000000
+      internalID: 6412222030769749792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 276
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8640c358c74a33fe0800000000000000
+      internalID: -1210443020114328472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_5
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 334
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3c01145a56949b0800000000000000
+      internalID: -5095429742957378599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_6
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 301
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec154f4e274d56e50800000000000000
+      internalID: 6802076402145579470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 288
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53522534e9bd622e0800000000000000
+      internalID: -2150790299242060491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997a3ae374d9b6370800000000000000
+      internalID: 8316914066188904345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 256
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5350463fe98be2330800000000000000
+      internalID: 3688088137690776885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 216
+        width: 70
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038fa3e37652965d0800000000000000
+      internalID: -3068880545720371152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_11
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 262
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11536556c5aafb5f0800000000000000
+      internalID: -738684500051610351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_12
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 239
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9f94a9c0c201820800000000000000
+      internalID: 2886855793784256967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_13
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 83
+        width: 233
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab641f695d682840800000000000000
+      internalID: 5199526000682363822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_14
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 232
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7e3d3003f3dc9c0800000000000000
+      internalID: -3905395826405152827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_15
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 235
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d896b63e83ed1940800000000000000
+      internalID: 5268617339036145877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_16
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 117
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fb8e39e0283f060800000000000000
+      internalID: 6986070446104428406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_17
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 218
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56ddb5267d3850c0800000000000000
+      internalID: -4586848642828216741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_18
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 187
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48dcd427af46e770800000000000000
+      internalID: 8639680514453461069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_19
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 199
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7580b60672363b00800000000000000
+      internalID: 807888665659344255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_20
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 184
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496f98c793ff824a0800000000000000
+      internalID: -6617759030053308780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_21
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 147
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e954f3bf45853c70800000000000000
+      internalID: 8950206411836774889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_22
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 133
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad4bdea6aa3791c0800000000000000
+      internalID: -4497061215333560920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_23
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 161
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d4121a86ca0c500800000000000000
+      internalID: 414520731097976112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_24
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 135
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e8e1f2c05539c30800000000000000
+      internalID: 4364925974670642718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 58
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f109067d138f290800000000000000
+      internalID: -7856474748840042652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_26
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 105
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9ed465dc9b64e60800000000000000
+      internalID: 7946242884109199819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_27
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 96
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b46ca48c3d509320800000000000000
+      internalID: 2562650702479123636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiled_Abstract brown background tiles_28
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 67
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4773df242a5c870800000000000000
+      internalID: 8702540263563162835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 792b77ddf9a664b41a799cb4252da2c5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tiled_Abstract brown background tiles_0: -3388718691045216406
+      tiled_Abstract brown background tiles_1: -6683449597175609233
+      tiled_Abstract brown background tiles_10: -3068880545720371152
+      tiled_Abstract brown background tiles_11: -738684500051610351
+      tiled_Abstract brown background tiles_12: 2886855793784256967
+      tiled_Abstract brown background tiles_13: 5199526000682363822
+      tiled_Abstract brown background tiles_14: -3905395826405152827
+      tiled_Abstract brown background tiles_15: 5268617339036145877
+      tiled_Abstract brown background tiles_16: 6986070446104428406
+      tiled_Abstract brown background tiles_17: -4586848642828216741
+      tiled_Abstract brown background tiles_18: 8639680514453461069
+      tiled_Abstract brown background tiles_19: 807888665659344255
+      tiled_Abstract brown background tiles_2: -1451960136036389014
+      tiled_Abstract brown background tiles_20: -6617759030053308780
+      tiled_Abstract brown background tiles_21: 8950206411836774889
+      tiled_Abstract brown background tiles_22: -4497061215333560920
+      tiled_Abstract brown background tiles_23: 414520731097976112
+      tiled_Abstract brown background tiles_24: 4364925974670642718
+      tiled_Abstract brown background tiles_25: -7856474748840042652
+      tiled_Abstract brown background tiles_26: 7946242884109199819
+      tiled_Abstract brown background tiles_27: 2562650702479123636
+      tiled_Abstract brown background tiles_28: 8702540263563162835
+      tiled_Abstract brown background tiles_3: 6412222030769749792
+      tiled_Abstract brown background tiles_4: -1210443020114328472
+      tiled_Abstract brown background tiles_5: -5095429742957378599
+      tiled_Abstract brown background tiles_6: 6802076402145579470
+      tiled_Abstract brown background tiles_7: -2150790299242060491
+      tiled_Abstract brown background tiles_8: 8316914066188904345
+      tiled_Abstract brown background tiles_9: 3688088137690776885
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
