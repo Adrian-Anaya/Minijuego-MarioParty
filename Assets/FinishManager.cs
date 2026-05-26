@@ -1,18 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-using System.Collections; // Necesario para las corrutinas
+using System.Collections;
 
 public class FinishManager : MonoBehaviour
 {
     [Header("Referencias de la UI")]
     public GameObject finishText;
     public GameObject finalMenu;
-    public CanvasGroup fadePanel; // Panel negro con un componente CanvasGroup
+    public CanvasGroup fadePanel;
+    public AudioSource audioSource; // <-- Ya está aquí integrado
 
     [Header("Configuración")]
     public float timeToFinish = 30f;
-    public float delayAntesDelMenu = 1.5f; // Tiempo para ver la animación de muerte
+    public float delayAntesDelMenu = 1.5f;
 
     private bool finished = false;
 
@@ -20,7 +21,7 @@ public class FinishManager : MonoBehaviour
     {
         if (finalMenu != null) finalMenu.SetActive(false);
         if (finishText != null) finishText.SetActive(false);
-        if (fadePanel != null) fadePanel.alpha = 0f; // Pantalla transparente al inicio
+        if (fadePanel != null) fadePanel.alpha = 0f;
         Time.timeScale = 1f;
     }
 
@@ -42,31 +43,35 @@ public class FinishManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    // Se llama desde el script MuerteJugador
     public void JugadorMurio()
     {
         if (finished) return;
         finished = true;
-        // Iniciamos la secuencia de transición diferida
         StartCoroutine(SecuenciaMuerte());
     }
 
     private IEnumerator SecuenciaMuerte()
     {
-        // 1. Esperamos un momento para ver la animación de muerte de la rana
+        // 1. Esperamos el tiempo de espera
         yield return new WaitForSecondsRealtime(delayAntesDelMenu);
 
-        // 2. Desvanecimiento a negro (Fade Out) si el panel existe
+        // 2. Reproducimos el sonido si está configurado
+        if (audioSource != null && audioSource.clip != null)
+        {
+            audioSource.Play();
+        }
+
+        // 3. Desvanecimiento a negro
         if (fadePanel != null)
         {
             while (fadePanel.alpha < 1f)
             {
-                fadePanel.alpha += Time.unscaledDeltaTime * 2f; // Velocidad del fade
+                fadePanel.alpha += Time.unscaledDeltaTime * 2f;
                 yield return null;
             }
         }
 
-        // 3. Mostramos el menú y pausamos el juego
+        // 4. Mostramos el menú final
         ActualizarUI("¡GAME OVER!");
         if (finalMenu != null) finalMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -89,4 +94,4 @@ public class FinishManager : MonoBehaviour
     }
 
     public void Salir() => Application.Quit();
-}                                                                                              
+}
