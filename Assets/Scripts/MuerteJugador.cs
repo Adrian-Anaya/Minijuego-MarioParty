@@ -36,11 +36,16 @@ public class MuerteJugador : MonoBehaviour
             animator.SetTrigger("Die");
         }
 
-        // Busca el script de arriba y lo activa
-        FinishManager managerFinal = FindObjectOfType<FinishManager>();
+        // CÓDIGO CORREGIDO PARA UNITY 6:
+        // Buscamos el FinishManager con la nueva sintaxis para que sí encuentre el GameManager
+        FinishManager managerFinal = Object.FindAnyObjectByType<FinishManager>();
         if (managerFinal != null)
         {
             managerFinal.JugadorMurio();
+        }
+        else
+        {
+            Debug.LogError("No se encontro el FinishManager en la escena.");
         }
     }
 
